@@ -1,7 +1,7 @@
 body {
   background-color: var(--background-page-white-color);
   color: var(--brown-light-text-color);
-  font-family: 'Varta', sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 ul,
@@ -36,4 +36,11 @@ img {
   --header-link-color: #706458;
   --accent-color: #A06056;
   --background-page-white-color: #ffffff;
+  /* hero-section */
+  --hero-logo: #62D0DF;
+  --navigation-item-color: #22356F;
+  --hero-logo-hover: #0056b3;
+  --background-page-white-color-hover: #e0e0e0;
+  --background-section-hero: #F4F9E2;
+  --button-text-color: #FAB63E;
 }

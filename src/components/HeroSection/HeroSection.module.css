@@ -1,0 +1,21 @@
+.hero {
+    background-color: var(--background-section-hero);
+    padding: 50px 180px;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 200px;
+
+}

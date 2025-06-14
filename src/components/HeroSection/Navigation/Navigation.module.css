@@ -1,0 +1,22 @@
+.navigation {}
+
+.list {
+    display: flex;
+    gap: 16px;
+}
+
+.item a {
+    color: var(--navigation-item-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0%;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* плавный переход */
+}
+
+.item a:hover,
+.item a:focus {
+    color: var(--hero-logo);
+    outline: none;
+}

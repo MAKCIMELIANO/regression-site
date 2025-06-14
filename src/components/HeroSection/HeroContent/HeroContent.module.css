@@ -1,0 +1,59 @@
+.hero_title {
+    color: var(--navigation-item-color);
+    max-width: 484px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.68px;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.hero_text {
+    color: var(--navigation-item-color);
+    margin-top: 50px;
+    max-width: 484px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    display: block;
+    text-align: left;
+}
+
+.hero_list {
+    display: flex;
+    gap: 38px;
+    margin-top: 50px;
+}
+
+.hero_item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--button-text-color);
+    border: 2px solid var(--button-text-color);
+    border-radius: 50px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.hero_item a:hover,
+.hero_item a:focus {
+    background-color: var(--button-text-color);
+    color: var(--background-page-white-color);
+    outline: none;
+}
