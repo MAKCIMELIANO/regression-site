@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Родові проблеми",
+    "paragraph": "Это параграф для заголовка 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisl a interdum fermentum, velit justo euismod purus, a varius magna dui id felis. Vivamus ut sem quis nisl elementum vehicula.",
+    "backgroundColor": "#22356F"
+  },
+  {
+    "title": "Заголовок 2",
+    "paragraph": "Это параграф для заголовка 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisl a interdum fermentum, velit justo euismod purus, a varius magna dui id felis. Vivamus ut sem quis nisl elementum vehicula.",
+    "backgroundColor": "#0052C1"
+  },
+  {
+    "title": "Заголовок 3",
+    "paragraph": "Это параграф для заголовка 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisl a interdum fermentum, velit justo euismod purus, a varius magna dui id felis. Vivamus ut sem quis nisl elementum vehicula.",
+    "backgroundColor": "#62D0DF"
+  },
+  {
+    "title": "Заголовок 4",
+    "paragraph": "Это параграф для заголовка 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisl a interdum fermentum, velit justo euismod purus, a varius magna dui id felis. Vivamus ut sem quis nisl elementum vehicula.",
+    "backgroundColor": "#FF8C42"
+  },
+  {
+    "title": "Заголовок 5",
+    "paragraph": "Это параграф для заголовка 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisl a interdum fermentum, velit justo euismod purus, a varius magna dui id felis. Vivamus ut sem quis nisl elementum vehicula.",
+    "backgroundColor": "#8F00FF"
+  },
+  {
+    "title": "Заголовок 6",
+    "paragraph": "Это параграф для заголовка 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisl a interdum fermentum, velit justo euismod purus, a varius magna dui id felis. Vivamus ut sem quis nisl elementum vehicula.",
+    "backgroundColor": "#D14B4B"
+  }
+]
