@@ -10,7 +10,7 @@ import WeCanHelpYouWith from './components/WeCanHelpYouWith/WeCanHelpYouWith';
 
 function App() {
   return (
-    <>
+    <div className="container">
       <HeroSection />
       <FreedomSection />
       <AboutUs />
@@ -19,7 +19,7 @@ function App() {
       <ShouldAlsoKnow />
       <ContactUs />
       <Footer />
-    </>
+    </div>
   );
 }
 
