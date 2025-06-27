@@ -1,25 +1,25 @@
 .container {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .container {
     max-width: 960px;
     padding: 1.5rem;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     max-width: 720px;
     padding: 1rem;
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .container {
     max-width: 100%;
     padding: 0.5rem;

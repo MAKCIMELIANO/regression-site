@@ -1,3 +1,4 @@
+import { FaFacebook, FaInstagram, FaTelegram, FaViber } from 'react-icons/fa';
 import s from './Navigation.module.css';
 
 const Navigation: React.FC = () => {
@@ -5,16 +6,28 @@ const Navigation: React.FC = () => {
     <nav className={s.navigation}>
       <ul className={s.list}>
         <li className={s.item}>
-          <a href="#section1">Section 1</a>
+          <a href="https://facebook.com">
+            <FaFacebook className={s.icon} />
+            Facebook
+          </a>
         </li>
         <li className={s.item}>
-          <a href="#section2">Section 2</a>
+          <a href="https://instagram.com">
+            <FaInstagram className={s.icon} />
+            Instagram
+          </a>
         </li>
         <li className={s.item}>
-          <a href="#section3">Section 3</a>
+          <a href="https://telegram.org">
+            <FaTelegram className={s.icon} />
+            Telegram
+          </a>
         </li>
         <li className={s.item}>
-          <a href="#section4">Section 4</a>
+          <a href="viber://chat?number=%2B1234567890">
+            <FaViber className={s.icon} />
+            Viber
+          </a>
         </li>
       </ul>
     </nav>

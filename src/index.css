@@ -1,6 +1,6 @@
 body {
   background-color: var(--background-page-white-color);
-  color: var(--brown-light-text-color);
+  color: var(--navigation-item-color);
   font-family: 'PT Sans', sans-serif;
 }
 

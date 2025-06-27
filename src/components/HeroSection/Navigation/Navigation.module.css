@@ -6,6 +6,8 @@
 }
 
 .item a {
+    display: flex;
+    align-items: center;
     color: var(--navigation-item-color);
     font-size: 14px;
     font-style: normal;
@@ -13,6 +15,10 @@
     line-height: 0%;
     transition: color 0.3s ease, background-color 0.3s ease;
     /* плавный переход */
+}
+
+.icon {
+    margin-right: 4px;
 }
 
 .item a:hover,

@@ -1,7 +1,8 @@
 import {
   FaFacebook,
-  FaTwitter,
   FaInstagram,
+  FaTelegram,
+  FaViber,
   FaEnvelope,
   FaPhone,
 } from 'react-icons/fa';
@@ -36,15 +37,21 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li className={s.socialLink}>
-                <a href="https://twitter.com">
-                  <FaTwitter className={s.icon} />
-                  Twitter
-                </a>
-              </li>
-              <li className={s.socialLink}>
                 <a href="https://instagram.com">
                   <FaInstagram className={s.icon} />
                   Instagram
+                </a>
+              </li>
+              <li className={s.socialLink}>
+                <a href="https://telegram.org">
+                  <FaTelegram className={s.icon} />
+                  Telegram
+                </a>
+              </li>
+              <li className={s.socialLink}>
+                <a href="viber://chat?number=%2B1234567890">
+                  <FaViber className={s.icon} />
+                  Viber
                 </a>
               </li>
             </ul>
