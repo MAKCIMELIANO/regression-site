@@ -56,3 +56,118 @@
     object-fit: cover;
     object-position: left;
 }
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--hero-logo);
+        padding: 0;
+        margin: 0;
+    }
+
+    .text_content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: var(--background-page-white-color);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .text_content h2 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 75px;
+    }
+
+    .text_content p {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5;
+        display: block;
+        text-align: left;
+    }
+
+    .text_content span {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        display: block;
+        text-align: left;
+    }
+
+    .image_content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .image_content img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        padding: 0;
+        margin: 0;
+
+    }
+}
+
+/* mobile */
+
+@media screen and (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--hero-logo);
+    }
+
+    .text_content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: var(--background-page-white-color);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .text_content h2 {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 75px;
+    }
+
+    .text_content p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5;
+        display: block;
+        text-align: left;
+    }
+
+    .text_content span {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        display: block;
+        text-align: left;
+    }
+}
