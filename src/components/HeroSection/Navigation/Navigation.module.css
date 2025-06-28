@@ -2,6 +2,7 @@
 
 .list {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -14,7 +15,6 @@
     font-weight: 500;
     line-height: 0%;
     transition: color 0.3s ease, background-color 0.3s ease;
-    /* плавный переход */
 }
 
 .icon {
@@ -25,4 +25,20 @@
 .item a:focus {
     color: var(--hero-logo);
     outline: none;
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {}
+
+/* mobile */
+
+@media screen and (max-width: 767px) {
+    .list {
+        flex-direction: column;
+    }
+
+    .navigation {
+        margin-bottom: 30px;
+    }
 }

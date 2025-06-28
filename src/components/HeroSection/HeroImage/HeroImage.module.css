@@ -4,3 +4,25 @@
     border-radius: 50%;
     margin-left: 20px;
 }
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .hero_image {
+        width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+    .hero_image {
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
