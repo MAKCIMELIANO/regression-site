@@ -18,7 +18,7 @@ const FreedomSection = () => {
         </span>
       </div>
       <div className={s.image_content}>
-        <img src="/images/happy-girl.jpg" alt="freedom" />
+        <img src="/images/happy-girl.webp" alt="freedom" />
       </div>
     </div>
   );
