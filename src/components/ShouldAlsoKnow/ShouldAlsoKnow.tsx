@@ -4,7 +4,7 @@ const ShouldAlsoKnow = () => {
   return (
     <div className={s.shouldAlsoKnow}>
       <div className={s.imageContainer}>
-        <img src="/images/shouldalso.png" alt="Description" />
+        <img src="/images/session.jpg" alt="Description" />
       </div>
       <div className={s.contentContainer}>
         <h2>YOU SHOULD ALSO KNOW</h2>

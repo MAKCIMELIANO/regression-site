@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
       <div className={s.mainContent}>
         <div className={s.footerLeft}>
           <img
-            src="/images/yulia.png"
+            src="/images/yulia-kiriluk.png"
             alt="Your Photo"
             className={s.footerPhoto}
           />

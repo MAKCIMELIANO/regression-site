@@ -13,7 +13,7 @@ const ContactUs = () => {
         <a href="mailto:contact@example.com">Связаться с нами</a>
       </div>
       <div className={s.image_content}>
-        <img src="/images/contact-us.png" alt="freedom" />
+        <img src="/images/about-us.jpg" alt="freedom" />
       </div>
     </div>
   );
