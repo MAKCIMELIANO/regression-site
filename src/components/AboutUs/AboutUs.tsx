@@ -1,14 +1,15 @@
 import s from './AboutUs.module.css';
+
 const AboutUs = () => {
   return (
-    <section className={s.container}>
+    <section id="about" className={s.container}>
       <h2>Про Мене</h2>
       <p>
-        We want to help you thrive! Whether you are just looking for someone to
-        talk to, or are struggling with a mental wellness issue we’re here to
-        help. Our highly talented therapists can help you with a range of issues
-        including relationships, sex, PTSD, depression, social anxiety, or even
-        just caring for yourself more.
+        Я хочу допомогти вам процвітати! Незалежно від того, чи ви просто
+        шукаєте когось, з ким можна поговорити, чи боретеся з проблемами
+        психічного здоров'я, я тут, щоб допомогти. Я, як регресолог, можу
+        допомогти вам з різними питаннями, включаючи відносини, ПТСР, депресію,
+        соціальну тривожність або навіть покращення самодогляду.
       </p>
     </section>
   );

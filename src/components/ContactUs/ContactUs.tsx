@@ -4,16 +4,16 @@ const ContactUs = () => {
   return (
     <div className={s.container}>
       <div className={s.text_content}>
-        <h2>CONTACT US</h2>
-        <h3>Ready. Set. Smile</h3>
+        <h2>ЗВ'ЯЖІТЬСЯ ЗІ МНОЮ</h2>
+        <h3>Готові. Увага. Посміхніться</h3>
         <p>
-          Take the free online assessment to see if you are a candidate and get
-          started on your journey.
+          Пройдіть безкоштовну онлайн-оцінку, щоб дізнатися, чи підходите ви для
+          нашої терапії, і розпочніть свою подорож до покращення самопочуття.
         </p>
-        <a href="mailto:contact@example.com">Связаться с нами</a>
+        <a href="mailto:contact@example.com">Зв'язатися зі мною</a>
       </div>
       <div className={s.image_content}>
-        <img src="/images/about-us.jpg" alt="freedom" />
+        <img src="/images/about-us.jpg" alt="Про нас" />
       </div>
     </div>
   );

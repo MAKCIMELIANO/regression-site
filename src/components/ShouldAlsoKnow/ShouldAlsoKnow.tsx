@@ -4,16 +4,16 @@ const ShouldAlsoKnow = () => {
   return (
     <div className={s.shouldAlsoKnow}>
       <div className={s.imageContainer}>
-        <img src="/images/session.jpg" alt="Description" />
+        <img src="/images/session.jpg" alt="Опис" />
       </div>
       <div className={s.contentContainer}>
-        <h2>YOU SHOULD ALSO KNOW</h2>
+        <h2>ВАЖЛИВО ЗНАТИ</h2>
         <p>
-          MDD affects more than 16.1 million American adults, or about 6.7%of
-          the U.S. population age 18 and older in a given year. We at{' '}
-          <span>РегресЮля</span> can help you.
+          Велика депресія впливає на більш ніж 8 мільйонів дорослих в Україні,
+          або приблизно 6.7% населення країни віком від 18 років і старше за
+          рік. Я <span>РегресЮля</span> можу допомогти вам.
         </p>
-        <a href="mailto:contact@example.com">Связаться с нами</a>
+        <a href="mailto:contact@example.com">Зв'язатися зі мною</a>
       </div>
     </div>
   );

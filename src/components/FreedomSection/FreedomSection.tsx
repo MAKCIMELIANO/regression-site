@@ -2,21 +2,19 @@ import s from './FreedomSection.module.css';
 
 const FreedomSection = () => {
   return (
-    <div className={s.container}>
+    <div id="services" className={s.container}>
       <div className={s.text_content}>
-        <h2>Why Thrive?</h2>
+        <h2>Чому обрати мене?</h2>
         <p>
-          Want to improve your well-being from the comfort of your own couch?
-          Are you having trouble finding the right therapist?
+          Хочете покращити своє самопочуття не виходячи з дому? Вам важко знайти
+          потрібного терапевта?
         </p>
         <span>
-          Here at ThriveTalk, our licensed therapists provide the same quality
-          care you would get in office from anywhere you can access your laptop
-          or mobile phone. Become your best self with ThriveTalk. Start therapy
-          now with a licensed therapist! Here at ThriveTalk, our licensed
-          therapists provide the same quality care you would get in office from
-          anywhere you can access your laptop or mobile phone. Become your best
-          self with ThriveTalk. Start therapy now with a licensed therapist!
+          Я, як професіональний регресолог, надаю ту саму якісну допомогу, яку
+          ви отримали б в офісі, але з будь-якого місця, де ви можете отримати
+          доступ до свого ноутбука або мобільного телефону. Станьте найкращою
+          версією себе разом зі мною. Розпочніть терапію зараз з досвідченим
+          регресологом!
         </span>
       </div>
       <div className={s.image_content}>

@@ -15,20 +15,20 @@ const Footer: React.FC = () => {
         <div className={s.footerLeft}>
           <img
             src="/images/yulia-kiriluk.png"
-            alt="Your Photo"
+            alt="Ваше фото"
             className={s.footerPhoto}
           />
         </div>
         <ul className={s.footerRight}>
           <li className={s.footerSection}>
-            <h4 className={s.footerTitle}>Заголовок</h4>
+            <h4 className={s.footerTitle}>Про мене</h4>
             <p className={s.footerText}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula.
+              Я, Юлія Кирилюк, регресолог з багаторічним досвідом. Допомагаю
+              людям знайти гармонію та покращити своє самопочуття.
             </p>
           </li>
           <li className={s.footerSection}>
-            <h4 className={s.footerTitle}>Социальные сети</h4>
+            <h4 className={s.footerTitle}>Соціальні мережі</h4>
             <ul className={s.socialLinksList}>
               <li className={s.socialLink}>
                 <a href="https://facebook.com">
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
             </ul>
           </li>
           <li className={s.footerSection}>
-            <h4 className={s.footerTitle}>Контакты</h4>
+            <h4 className={s.footerTitle}>Контакти</h4>
             <ul className={s.contactLinksList}>
               <li className={s.socialLink}>
                 <a href="mailto:example@example.com">
@@ -77,7 +77,8 @@ const Footer: React.FC = () => {
       </div>
       <div className={s.copyrightContainer}>
         <p className={s.copyright}>
-          &copy; 2023 РегресЮля. Все права защищены.
+          &copy; 2025 Сайт регресолога. Розробив та редагував
+          makcimeliano@gmail.com
         </p>
       </div>
     </footer>

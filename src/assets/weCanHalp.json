@@ -1,32 +1,32 @@
 [
   {
     "title": "Родові проблеми",
-    "paragraph": "Это параграф для заголовка 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisl a interdum fermentum, velit justo euismod purus, a varius magna dui id felis. Vivamus ut sem quis nisl elementum vehicula.",
+    "paragraph": "Я допомагаю клієнтам вирішувати родові проблеми, які можуть впливати на їхнє життя. Це може включати роботу з травмами, які передаються з покоління в покоління, і допомогу в усвідомленні та вирішенні цих проблем.",
     "backgroundColor": "#22356F"
   },
   {
-    "title": "Заголовок 2",
-    "paragraph": "Это параграф для заголовка 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisl a interdum fermentum, velit justo euismod purus, a varius magna dui id felis. Vivamus ut sem quis nisl elementum vehicula.",
+    "title": "Терапія депресії",
+    "paragraph": "Депресія може значно впливати на якість життя. Я пропоную індивідуальні сеанси терапії, щоб допомогти вам зрозуміти корені депресії і знайти шляхи її подолання.",
     "backgroundColor": "#0052C1"
   },
   {
-    "title": "Заголовок 3",
-    "paragraph": "Это параграф для заголовка 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisl a interdum fermentum, velit justo euismod purus, a varius magna dui id felis. Vivamus ut sem quis nisl elementum vehicula.",
+    "title": "Тривожні розлади",
+    "paragraph": "Тривога може бути виснажливою. Я надаю підтримку і техніки, які допоможуть вам справлятися з тривогою, знижуючи її вплив на ваше повсякденне життя.",
     "backgroundColor": "#62D0DF"
   },
   {
-    "title": "Заголовок 4",
-    "paragraph": "Это параграф для заголовка 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisl a interdum fermentum, velit justo euismod purus, a varius magna dui id felis. Vivamus ut sem quis nisl elementum vehicula.",
+    "title": "Терапія ПТСР",
+    "paragraph": "ПТСР може виникнути після травматичних подій. Я допомагаю клієнтам обробити ці події і знайти способи жити повноцінним життям, незважаючи на минулі травми.",
     "backgroundColor": "#FF8C42"
   },
   {
-    "title": "Заголовок 5",
-    "paragraph": "Это параграф для заголовка 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisl a interdum fermentum, velit justo euismod purus, a varius magna dui id felis. Vivamus ut sem quis nisl elementum vehicula.",
+    "title": "Проблеми у відносинах",
+    "paragraph": "Відносини можуть бути складними. Я пропоную консультування для пар і індивідуальних клієнтів, щоб допомогти їм вирішити конфлікти і покращити їхні взаємини.",
     "backgroundColor": "#8F00FF"
   },
   {
-    "title": "Заголовок 6",
-    "paragraph": "Это параграф для заголовка 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisl a interdum fermentum, velit justo euismod purus, a varius magna dui id felis. Vivamus ut sem quis nisl elementum vehicula.",
+    "title": "Покращення самодогляду",
+    "paragraph": "Самодогляд є важливим для загального благополуччя. Я допомагаю клієнтам розробити індивідуальні плани самодогляду, які підтримують їхнє фізичне, емоційне і психічне здоров'я.",
     "backgroundColor": "#D14B4B"
   }
 ]

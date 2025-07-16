@@ -1,6 +1,6 @@
 .hero {
     background-color: var(--background-section-hero);
-    padding: 50px 180px;
+    padding: 50px 180px 0px 180px;
 }
 
 .header {
@@ -22,7 +22,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .hero {
-        padding: 40px 20px;
+        padding: 40px 20px 0px 20px;
     }
 }
 
@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 767px) {
     .hero {
-        padding: 40px 20px;
+        padding: 40px 20px 0px 20px;
     }
 
     .header {
