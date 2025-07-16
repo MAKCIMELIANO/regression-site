@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
         <div className={s.footerLeft}>
           <img
             src="/images/yulia-kiriluk.webp"
-            alt="Ваше фото"
+            alt="Юлія Кирилюк"
             className={s.footerPhoto}
           />
         </div>

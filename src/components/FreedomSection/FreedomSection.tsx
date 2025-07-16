@@ -18,7 +18,10 @@ const FreedomSection = () => {
         </span>
       </div>
       <div className={s.image_content}>
-        <img src="/images/happy-girl.webp" alt="freedom" />
+        <img
+          src="/images/happy-girl.webp"
+          alt="Дівчина у регресівному гіпнозі посміхається"
+        />
       </div>
     </div>
   );
