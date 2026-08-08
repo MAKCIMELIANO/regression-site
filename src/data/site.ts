@@ -18,10 +18,10 @@ export const site = {
   metaPixelId: '',
   session: {
     format: 'Онлайн',
-    platforms: 'Zoom або Google Meet',
+    platforms: 'Telegram',
     duration: '60–90 хвилин',
-    priceFrom: 'від 1 500 грн',
-    priceNote: 'Точну вартість узгоджуємо після короткої розмови про запит',
+    priceFrom: '2 000 грн',
+    priceNote: 'Вартість одного індивідуального онлайн-сеансу',
     firstStep: 'Спочатку — коротка знайомча розмова в месенджері без зобов’язань',
   },
   aboutHighlights: [

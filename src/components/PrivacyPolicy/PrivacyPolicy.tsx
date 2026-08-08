@@ -3,15 +3,18 @@ import s from './PrivacyPolicy.module.css';
 
 function PrivacyPolicy() {
   return (
-    <section id="privacy" className={s.section} aria-labelledby="privacy-title">
+    <main id="privacy" className={s.page} aria-labelledby="privacy-title">
       <div className={`inner ${s.content}`}>
+        <a href="#top" className={s.back}>
+          ← На головну
+        </a>
         <p className="sectionLabel">Документи</p>
-        <h2 id="privacy-title">Політика конфіденційності</h2>
+        <h1 id="privacy-title">Політика конфіденційності</h1>
         <p className={s.updated}>Оновлено: серпень 2026</p>
 
         <div className={s.blocks}>
           <div>
-            <h3>1. Хто ми</h3>
+            <h2>1. Хто ми</h2>
             <p>
               Сайт {site.brand} належить {site.fullName} ({site.role}). Контакт:{' '}
               <a href={`mailto:${site.email}`}>{site.email}</a>.
@@ -19,7 +22,7 @@ function PrivacyPolicy() {
           </div>
 
           <div>
-            <h3>2. Які дані можемо отримувати</h3>
+            <h2>2. Які дані можемо отримувати</h2>
             <p>
               Коли ви пишете в Telegram, email або інші месенджери, ми отримуємо
               ті дані, які ви самі надсилаєте: ім’я, контакт, опис запиту.
@@ -30,7 +33,7 @@ function PrivacyPolicy() {
           </div>
 
           <div>
-            <h3>3. Навіщо це потрібно</h3>
+            <h2>3. Навіщо це потрібно</h2>
             <p>
               Дані використовуються, щоб відповісти на ваш запит, записати на
               сеанс, покращити сайт і (за наявності реклами) вимірювати
@@ -39,7 +42,7 @@ function PrivacyPolicy() {
           </div>
 
           <div>
-            <h3>4. З ким ділимось</h3>
+            <h2>4. З ким ділимось</h2>
             <p>
               Ми не продаємо ваші персональні дані. Технічні сервіси (хостинг,
               месенджери, Meta) можуть обробляти дані згідно зі своїми
@@ -48,7 +51,7 @@ function PrivacyPolicy() {
           </div>
 
           <div>
-            <h3>5. Зберігання та ваші права</h3>
+            <h2>5. Зберігання та ваші права</h2>
             <p>
               Листування зберігається стільки, скільки потрібно для роботи з
               клієнтом або за вимогою закону. Ви можете попросити уточнити,
@@ -58,7 +61,7 @@ function PrivacyPolicy() {
           </div>
 
           <div>
-            <h3>6. Cookies та піксель</h3>
+            <h2>6. Cookies та піксель</h2>
             <p>
               На сайті може використовуватися Meta Pixel для аналітики та
               оптимізації реклами. Ви можете обмежити cookies у налаштуваннях
@@ -67,7 +70,7 @@ function PrivacyPolicy() {
           </div>
 
           <div>
-            <h3>7. Важливо про послугу</h3>
+            <h2>7. Важливо про послугу</h2>
             <p>
               Регресійний гіпноз не є медичною послугою і не замінює лікування
               чи психотерапію. Звертаючись по консультацію, ви підтверджуєте, що
@@ -76,7 +79,7 @@ function PrivacyPolicy() {
           </div>
         </div>
       </div>
-    </section>
+    </main>
   );
 }
 
