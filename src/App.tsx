@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
 import ContactUs from './components/ContactUs/ContactUs';
@@ -18,16 +18,40 @@ function getPageFromHash() {
 
 function App() {
   const [page, setPage] = useState(getPageFromHash);
+  const prevPageRef = useRef(page);
 
   useEffect(() => {
     const onHashChange = () => {
       setPage(getPageFromHash());
-      window.scrollTo(0, 0);
     };
 
     window.addEventListener('hashchange', onHashChange);
     return () => window.removeEventListener('hashchange', onHashChange);
   }, []);
+
+  useEffect(() => {
+    const prevPage = prevPageRef.current;
+    prevPageRef.current = page;
+
+    // Якорі всередині лендингу (#contact тощо) — не чіпаємо, скролить браузер
+    if (prevPage === page) return;
+
+    if (page === 'privacy') {
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    const { hash } = window.location;
+    if (hash && hash !== '#privacy') {
+      const target = document.querySelector(hash);
+      if (target) {
+        target.scrollIntoView();
+        return;
+      }
+    }
+
+    window.scrollTo(0, 0);
+  }, [page]);
 
   if (page === 'privacy') {
     return (
