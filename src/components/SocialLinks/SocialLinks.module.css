@@ -1,0 +1,31 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.item a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.4;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.item a:hover,
+.item a:focus-visible {
+  color: var(--teal);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.icon {
+  flex-shrink: 0;
+  font-size: 1.1em;
+}

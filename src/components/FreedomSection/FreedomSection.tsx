@@ -1,30 +1,36 @@
 import s from './FreedomSection.module.css';
 
-const FreedomSection = () => {
+function FreedomSection() {
   return (
-    <div id="services" className={s.container}>
-      <div className={s.text_content}>
-        <h2>Чому обрати мене?</h2>
-        <p>
-          Хочете покращити своє самопочуття не виходячи з дому? Вам важко знайти
-          потрібного терапевта?
-        </p>
-        <span>
-          Я, як професіональний регресолог, надаю ту саму якісну допомогу, яку
-          ви отримали б в офісі, але з будь-якого місця, де ви можете отримати
-          доступ до свого ноутбука або мобільного телефону. Станьте найкращою
-          версією себе разом зі мною. Розпочніть терапію зараз з досвідченим
-          регресологом!
-        </span>
+    <section id="why" className={s.section} aria-labelledby="why-title">
+      <div className={`inner ${s.grid}`}>
+        <div className={s.textContent}>
+          <p className="sectionLabel">Підхід</p>
+          <h2 id="why-title">Чому онлайн-регресія зі мною</h2>
+          <p className={s.lead}>
+            Хочете подбати про себе, не витрачаючи години на дорогу? Шукаєте
+            безпечний простір для глибокої роботи?
+          </p>
+          <p className={s.body}>
+            Проводжу сеанси регресійного гіпнозу онлайн — з тією ж уважністю й
+            якістю, що й офлайн. Достатньо тихого місця, навушників і бажання
+            зустрітися з собою. Разом ми рухаємось у вашому темпі.
+          </p>
+          <a className="btnSecondary" href="#contact">
+            Розпочати з короткої розмови
+          </a>
+        </div>
+        <div className={s.imageContent}>
+          <img
+            src="/images/happy-girl.webp"
+            alt="Спокійна атмосфера після сеансу"
+            width={640}
+            height={720}
+          />
+        </div>
       </div>
-      <div className={s.image_content}>
-        <img
-          src="/images/happy-girl.webp"
-          alt="Дівчина у регресівному гіпнозі посміхається"
-        />
-      </div>
-    </div>
+    </section>
   );
-};
+}
 
 export default FreedomSection;

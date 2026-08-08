@@ -1,123 +1,57 @@
-.hero_content {
-    text-align: left;
+.heroContent {
+  padding: 3rem 0 4rem;
+  animation: riseIn 0.85s var(--ease-out) 0.1s both;
 }
 
-.hero_title {
-    color: var(--navigation-item-color);
-    max-width: 484px;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -1.68px;
-    word-wrap: break-word;
-    word-break: break-word;
-    white-space: normal;
+.brandSignal {
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--teal-deep);
 }
 
-.hero_text {
-    color: var(--navigation-item-color);
-    margin-top: 50px;
-    max-width: 484px;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    word-wrap: break-word;
-    word-break: break-word;
-    white-space: normal;
-    display: block;
-    text-align: left;
+.heroTitle {
+  max-width: 18ch;
+  color: var(--navy);
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.4vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
-
-.hero_list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 38px;
-    margin-top: 50px;
+.heroText {
+  max-width: 36ch;
+  margin-top: 1.5rem;
+  color: var(--navy-soft);
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  font-weight: 500;
+  line-height: 1.55;
 }
 
-.hero_item a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: var(--button-text-color);
-    border: 2px solid var(--button-text-color);
-    border-radius: 50px;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
+.heroButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .heroContent {
+    padding: 1rem 0 0;
     text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    word-wrap: break-word;
-    word-break: break-word;
-    white-space: normal;
-}
+  }
 
-.hero_item a:hover,
-.hero_item a:focus {
-    background-color: var(--button-text-color);
-    color: var(--background-page-white-color);
-    outline: none;
-}
+  .brandSignal,
+  .heroTitle,
+  .heroText {
+    margin-inline: auto;
+  }
 
-/* tablet */
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-    .hero {
-        padding: 40px 20px;
-    }
-
-    .hero_list {
-        gap: 10px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-}
-
-/* mobile */
-
-@media screen and (max-width: 767px) {
-    .hero_title {
-        color: var(--navigation-item-color);
-        max-width: 100%;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.2;
-        letter-spacing: -0.84px;
-        word-wrap: break-word;
-        word-break: break-word;
-        white-space: normal;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .hero_text {
-        color: var(--navigation-item-color);
-        margin-top: 30px;
-        max-width: 100%;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
-        word-wrap: break-word;
-        word-break: break-word;
-        white-space: normal;
-    }
-
-    .hero_list {
-        gap: 10px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        justify-content: center;
-    }
-
-    .hero_item a {
-        padding: 8px 16px;
-        font-size: 18px;
-    }
+  .heroButtons {
+    justify-content: center;
+  }
 }

@@ -1,20 +1,24 @@
+import { site } from '../../../data/site';
 import s from './Logo.module.css';
 
-interface LogoProps {
+type LogoProps = {
   title: string;
-}
+};
 
-const Logo: React.FC<LogoProps> = ({ title }) => {
+function Logo({ title }: LogoProps) {
   return (
-    <div className={s.logo}>
+    <a href="#top" className={s.logo} aria-label={`${title} — на початок`}>
       <img
         src="/images/logo.webp"
-        alt="Юлія Кирилюк"
-        className={s.logo_image}
+        alt=""
+        className={s.logoImage}
+        width={44}
+        height={44}
       />
-      <span>{title}</span>
-    </div>
+      <span className={s.brand}>{title}</span>
+      <span className={s.tagline}>{site.role}</span>
+    </a>
   );
-};
+}
 
 export default Logo;

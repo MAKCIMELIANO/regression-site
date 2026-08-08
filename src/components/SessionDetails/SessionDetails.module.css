@@ -1,0 +1,82 @@
+.section {
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  background:
+    radial-gradient(600px 280px at 100% 0%, rgba(232, 168, 56, 0.12), transparent),
+    var(--surface);
+}
+
+.header {
+  max-width: 40rem;
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  margin-top: 0.6rem;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--navy);
+}
+
+.intro {
+  margin-top: 0.85rem;
+  max-width: 42ch;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  padding: 1.5rem 1.35rem;
+  border-radius: var(--radius-md);
+  background: var(--page);
+  border: 1px solid rgba(30, 58, 95, 0.08);
+  transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-soft);
+}
+
+.cardLabel {
+  margin-bottom: 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--teal-deep);
+}
+
+.cardValue {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--navy);
+}
+
+.cardNote {
+  margin-top: 0.65rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.cta {
+  display: inline-flex;
+}
+
+@media screen and (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,74 +1,60 @@
-.container {
-    display: flex;
-    background-color: var(--background-page-white-color);
-    color: var(--navigation-item-color);
-    padding-top: 150px;
-    padding-bottom: 150px;
-    padding-left: 150px;
-    padding-right: 300px;
-    gap: 225px;
+.section {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  background: var(--surface);
 }
 
-.container h2 {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.96px;
-    text-transform: uppercase;
-    display: block;
-    text-align: left;
-    white-space: nowrap;
+.grid {
+  display: grid;
+  grid-template-columns: minmax(140px, 200px) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: start;
 }
 
-.container p {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.12px;
-    display: block;
-    text-align: left;
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 52ch;
 }
 
-/* tablet */
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--background-page-white-color);
-        color: var(--navigation-item-color);
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 20px;
-        padding-right: 20px;
-        gap: 50px;
-    }
+.copy p {
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--navy);
 }
 
-/* mobile */
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.35rem;
+  padding: 0;
+}
+
+.highlights li {
+  position: relative;
+  padding-left: 1.35rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--navy-soft);
+}
+
+.highlights li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--teal);
+}
 
 @media screen and (max-width: 767px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--background-page-white-color);
-        color: var(--navigation-item-color);
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 20px;
-        padding-right: 20px;
-        gap: 50px;
-    }
-
-    .container p {
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.12px;
-        display: block;
-        text-align: left;
-    }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }

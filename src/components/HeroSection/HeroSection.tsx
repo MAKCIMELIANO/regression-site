@@ -1,24 +1,27 @@
-import s from './HeroSection.module.css';
-import Logo from './Logo/Logo';
-import Navigation from './Navigation/Navigation';
 import ContactButton from './ContactButton/ContactButton';
 import HeroContent from './HeroContent/HeroContent';
 import HeroImage from './HeroImage/HeroImage';
+import Logo from './Logo/Logo';
+import Navigation from './Navigation/Navigation';
+import { site } from '../../data/site';
+import s from './HeroSection.module.css';
 
-const HeroSection: React.FC = () => {
+function HeroSection() {
   return (
-    <section className={s.hero}>
-      <header className={s.header}>
-        <Logo title="РегресЮля" />
-        <Navigation />
-        <ContactButton />
-      </header>
-      <div className={s.content}>
+    <section id="top" className={s.hero} aria-label="Головний екран">
+      <div className={`inner ${s.headerWrap}`}>
+        <header className={s.header}>
+          <Logo title={site.brand} />
+          <Navigation />
+          <ContactButton />
+        </header>
+      </div>
+      <div className={`inner ${s.content}`}>
         <HeroContent />
         <HeroImage />
       </div>
     </section>
   );
-};
+}
 
 export default HeroSection;

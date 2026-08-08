@@ -1,114 +1,67 @@
-.shouldAlsoKnow {
-    display: flex;
+.section {
+  padding: clamp(3rem, 7vw, 5rem) 0;
+  background: var(--surface);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+}
+
+.imageContainer {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
 }
 
 .imageContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
 }
 
 .contentContainer {
-    text-align: left;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.1rem;
 }
 
 .contentContainer h2 {
-    margin-bottom: 225px;
-
-    color: var(--navigation-item-color);
-
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.96px;
-    text-transform: uppercase;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--navy);
 }
 
 .contentContainer p {
-    margin-bottom: 150px;
-
-    color: var(--navigation-item-color);
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.36px;
-    width: 600px;
+  max-width: 38ch;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--navy-soft);
 }
 
-.contentContainer p span {
-    color: var(--hero-logo);
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.84px;
+.brandLine {
+  color: var(--navy) !important;
+  font-weight: 700 !important;
 }
 
-.contentContainer a {
-    color: var(--button-text-color);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 1.6px;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-    text-transform: uppercase;
+.brandLine span {
+  color: var(--teal-deep);
+  font-family: var(--font-display);
 }
 
-.contentContainer a:hover,
-.contentContainer a:focus {
-    color: var(--button-text-color-hover);
-    text-decoration: underline;
-    outline: none;
-}
+@media screen and (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 
-/* tablet */
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-    .shouldAlsoKnow {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contentContainer {
-        text-align: left;
-        padding-top: 100px;
-        padding-left: 50px;
-        padding-bottom: 40px;
-    }
-}
-
-/* mobile */
-
-@media screen and (max-width: 767px) {
-    .shouldAlsoKnow {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contentContainer {
-        text-align: left;
-        padding-top: 50px;
-        padding-left: 20px;
-        padding-bottom: 40px;
-    }
-
-    .contentContainer h2 {
-        margin-bottom: 50px;
-    }
-
-    .contentContainer p {
-        margin-bottom: 100px;
-        font-size: 24px;
-        width: 100%;
-    }
-
-    .contentContainer p span {
-        font-size: 32px;
-    }
+  .imageContainer img {
+    max-height: 360px;
+  }
 }

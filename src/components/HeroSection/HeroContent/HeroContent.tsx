@@ -1,25 +1,24 @@
+import { site } from '../../../data/site';
 import s from './HeroContent.module.css';
 
 function HeroContent() {
   return (
-    <div className={s.hero_content}>
-      <h1 className={s.hero_title}>
-        ДОПОМАГАЮ ВАМ ПРОЦВІТАТИ У ВСІХ СФЕРАХ ЖИТТЯ
+    <div className={s.heroContent}>
+      <p className={s.brandSignal}>{site.brand}</p>
+      <h1 className={s.heroTitle}>
+        Регресійний гіпноз для внутрішньої гармонії
       </h1>
-      <p className={s.hero_text}>
-        Я, як регресолог, допомагаю людям подолати стрес, депресію, тривогу та
-        інші психологічні проблеми. Разом ми знайдемо шляхи до покращення вашого
-        життя та досягнення гармонії.
+      <p className={s.heroText}>
+        Допомагаю м’яко дістатися до коренів станів, які заважають жити легко —
+        і знайти опору в собі. Онлайн-сеанси з {site.fullName}.
       </p>
-      <div className={s.hero_buttons}>
-        <ul className={s.hero_list}>
-          <li className={s.hero_item}>
-            <a href="#about">Про мене</a>
-          </li>
-          <li className={s.hero_item}>
-            <a href="#services">Що я роблю?</a>
-          </li>
-        </ul>
+      <div className={s.heroButtons}>
+        <a className="btnPrimary" href="#contact">
+          Записатися на сеанс
+        </a>
+        <a className="btnSecondary" href="#help">
+          З чим я працюю
+        </a>
       </div>
     </div>
   );

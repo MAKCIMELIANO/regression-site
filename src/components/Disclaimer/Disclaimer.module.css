@@ -1,0 +1,17 @@
+.banner {
+  background: rgba(30, 58, 95, 0.06);
+  border-block: 1px solid rgba(30, 58, 95, 0.08);
+}
+
+.inner {
+  padding: 1.15rem 0;
+}
+
+.inner p {
+  max-width: 70ch;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}

@@ -1,22 +1,16 @@
-import { FaEnvelope, FaPhone } from 'react-icons/fa';
+import { site } from '../../../data/site';
 import s from './ContactButton.module.css';
 
 function ContactButton() {
   return (
-    <ul className={s.list}>
-      <li className={s.item}>
-        <a href="mailto:example@example.com" className={s.contactLink}>
-          <FaEnvelope className={s.icon} />
-          example@example.com
-        </a>
-      </li>
-      <li className={s.item}>
-        <a href="tel:+1234567890" className={s.contactLink}>
-          <FaPhone className={s.icon} />
-          +1234567890
-        </a>
-      </li>
-    </ul>
+    <div className={s.wrap}>
+      <a className={`btnPrimary ${s.cta}`} href="#contact">
+        Записатися
+      </a>
+      <a className={s.phone} href={`tel:${site.phone}`}>
+        {site.phoneDisplay}
+      </a>
+    </div>
   );
 }
 
