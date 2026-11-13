@@ -16,7 +16,14 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .idea
+.cursor
 .DS_Store
+
+# Робочі документи, не частина сайту
+*.docx
+
+# Чернетка іконки, на сайті не підключена
+public/favicon.svg
 *.suo
 *.ntvs*
 *.njsproj

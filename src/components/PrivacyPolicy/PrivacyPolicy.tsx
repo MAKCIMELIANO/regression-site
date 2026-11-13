@@ -17,7 +17,9 @@ function PrivacyPolicy() {
             <h2>1. Хто ми</h2>
             <p>
               Сайт {site.brand} належить {site.fullName} ({site.role}). Контакт:{' '}
-              <a href={`mailto:${site.email}`}>{site.email}</a>.
+              <a href={`mailto:${site.email}`}>{site.email}</a>
+              {', '}
+              <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>.
             </p>
           </div>
 

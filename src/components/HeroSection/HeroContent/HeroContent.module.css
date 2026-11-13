@@ -1,57 +1,53 @@
 .heroContent {
-  padding: 3rem 0 4rem;
+  width: min(100%, 42rem);
+  margin-inline: auto;
+  padding: 1rem 0 2rem;
+  text-align: center;
   animation: riseIn 0.85s var(--ease-out) 0.1s both;
 }
 
 .brandSignal {
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(3rem, 8vw, 5.5rem);
   font-weight: 700;
-  line-height: 1;
+  line-height: 0.95;
   letter-spacing: -0.03em;
   color: var(--teal-deep);
 }
 
 .heroTitle {
-  max-width: 18ch;
+  max-width: 16ch;
+  margin-inline: auto;
   color: var(--navy);
   font-family: var(--font-display);
-  font-size: clamp(1.75rem, 3.4vw, 2.75rem);
+  font-size: clamp(1.65rem, 3.2vw, 2.6rem);
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
 .heroText {
-  max-width: 36ch;
-  margin-top: 1.5rem;
+  max-width: 38ch;
+  margin: 1.35rem auto 0;
   color: var(--navy-soft);
-  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
   font-weight: 500;
   line-height: 1.55;
+}
+
+.meta {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--navy);
 }
 
 .heroButtons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.85rem;
   margin-top: 2rem;
-}
-
-@media screen and (max-width: 1024px) {
-  .heroContent {
-    padding: 1rem 0 0;
-    text-align: center;
-  }
-
-  .brandSignal,
-  .heroTitle,
-  .heroText {
-    margin-inline: auto;
-  }
-
-  .heroButtons {
-    justify-content: center;
-  }
 }

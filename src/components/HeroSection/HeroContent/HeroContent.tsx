@@ -9,8 +9,11 @@ function HeroContent() {
         Регресійний гіпноз для внутрішньої гармонії
       </h1>
       <p className={s.heroText}>
-        Допомагаю м’яко дістатися до коренів станів, які заважають жити легко —
-        і знайти опору в собі. Онлайн-сеанси з {site.fullName}.
+        Допомагаю м’яко дійти до коренів станів, які заважають жити спокійно,
+        і знайти опору в собі. Сеанси проводжу онлайн, у Telegram.
+      </p>
+      <p className={s.meta}>
+        Онлайн · {site.session.duration} · {site.session.priceFrom}
       </p>
       <div className={s.heroButtons}>
         <a className="btnPrimary" href="#contact">

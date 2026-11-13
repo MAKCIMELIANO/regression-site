@@ -1,3 +1,4 @@
+import { site } from '../../data/site';
 import s from './FreedomSection.module.css';
 
 function FreedomSection() {
@@ -8,13 +9,13 @@ function FreedomSection() {
           <p className="sectionLabel">Підхід</p>
           <h2 id="why-title">Чому онлайн-регресія зі мною</h2>
           <p className={s.lead}>
-            Хочете подбати про себе, не витрачаючи години на дорогу? Шукаєте
-            безпечний простір для глибокої роботи?
+            Хочете приділити час собі і не витрачати години на дорогу? Шукаєте
+            спокійний простір для глибокої роботи?
           </p>
           <p className={s.body}>
-            Проводжу сеанси регресійного гіпнозу онлайн — з тією ж уважністю й
-            якістю, що й офлайн. Достатньо тихого місця, навушників і бажання
-            зустрітися з собою. Разом ми рухаємось у вашому темпі.
+            Проводжу сеанси регресійного гіпнозу онлайн — з тією ж уважністю,
+            що й наживо. Достатньо тихого місця, навушників і бажання
+            зустрітися з собою. Йдемо у вашому темпі.
           </p>
           <a className="btnSecondary" href="#contact">
             Розпочати з короткої розмови
@@ -22,8 +23,8 @@ function FreedomSection() {
         </div>
         <div className={s.imageContent}>
           <img
-            src="/images/happy-girl.webp"
-            alt="Спокійна атмосфера після сеансу"
+            src="/images/yulia-kiriluk.webp"
+            alt={`${site.fullName}, ${site.role}`}
             width={640}
             height={720}
           />

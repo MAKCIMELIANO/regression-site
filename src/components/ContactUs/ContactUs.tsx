@@ -12,8 +12,8 @@ function ContactUs() {
           <h2 id="contact-title">Зв’яжіться зі мною</h2>
           <p className={s.lead}>Готові. Уважно. У своєму темпі.</p>
           <p className={s.body}>
-            Напишіть коротко про запит — відповім і підкажу, чи підходить
-            регресійна робота саме вам. Перша розмова допомагає познайомитися
+            Напишіть коротко, з чим хочете попрацювати. Відповім і чесно скажу,
+            чи підходить вам регресійний гіпноз. Перша розмова — знайомство,
             без зобов’язань.
           </p>
           <div className={s.actions}>
@@ -37,10 +37,10 @@ function ContactUs() {
         </div>
         <div className={s.imageContent}>
           <img
-            src="/images/about-us.webp"
-            alt={`${site.fullName} — запрошення до контакту`}
+            src="/images/yulia-kiriluk.webp"
+            alt={`${site.fullName}, ${site.role}`}
             width={640}
-            height={720}
+            height={800}
           />
         </div>
       </div>

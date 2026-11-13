@@ -12,7 +12,7 @@ function Footer() {
         <div className={s.footerSection}>
           <h3 className={s.footerTitle}>Про мене</h3>
           <p className={s.footerText}>
-            {site.fullName}, {site.role}. Допомагаю знайти внутрішню гармонію
+            Я, {site.fullName}, {site.role}. Допомагаю знайти внутрішню опору
             через регресійний гіпноз — онлайн, у вашому темпі.
           </p>
           <p className={s.footerText}>
