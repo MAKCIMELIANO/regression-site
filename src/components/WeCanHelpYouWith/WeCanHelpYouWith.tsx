@@ -54,7 +54,7 @@ function WeCanHelpYouWith() {
           <p className="sectionLabel">Практика</p>
           <h2 id="help-title">З чим я можу допомогти</h2>
           <p className={s.intro}>
-            Оберіть тему — коротко розповім, як виглядає робота в цьому запиті.
+            Оберіть тему — перелік основних тем (напрямів), з якими я працюю.
           </p>
         </header>
 
@@ -63,9 +63,11 @@ function WeCanHelpYouWith() {
             <li key={item.title} className={s.itemWrap}>
               <button
                 type="button"
+                id={item.id}
                 className={s.item}
                 style={{
-                  backgroundColor: item.backgroundColor,
+                  backgroundColor: `var(--help-bg-${index}, ${item.backgroundColor})`,
+                  color: `var(--help-fg-${index}, #ffffff)`,
                   animationDelay: `${index * 60}ms`,
                 }}
                 onClick={() => openItem(item)}
@@ -87,7 +89,10 @@ function WeCanHelpYouWith() {
             aria-modal="true"
             aria-labelledby={titleId}
             aria-describedby={descriptionId}
-            style={{ backgroundColor: selectedItem.backgroundColor }}
+            style={{
+              backgroundColor: `var(--help-bg-${helpItems.indexOf(selectedItem)}, ${selectedItem.backgroundColor})`,
+              color: `var(--help-fg-${helpItems.indexOf(selectedItem)}, #ffffff)`,
+            }}
           >
             <button
               ref={closeButtonRef}

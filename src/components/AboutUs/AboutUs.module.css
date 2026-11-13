@@ -1,60 +1,117 @@
 .section {
   padding: clamp(4rem, 8vw, 7rem) 0;
-  background: var(--surface);
+  background: var(--about-bg);
+  color: var(--about-text);
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: minmax(140px, 200px) minmax(0, 1fr);
-  gap: clamp(1.5rem, 5vw, 4rem);
-  align-items: start;
-}
-
-.copy {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 1.25rem;
-  max-width: 52ch;
 }
 
-.copy p {
-  font-size: clamp(1.15rem, 2vw, 1.4rem);
-  font-weight: 500;
-  line-height: 1.55;
-  color: var(--navy);
+.grid :global(.sectionLabel) {
+  color: var(--about-label);
 }
 
-.highlights {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-top: 0.35rem;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 1rem;
+  width: 100%;
+  margin: 0;
   padding: 0;
 }
 
-.highlights li {
-  position: relative;
-  padding-left: 1.35rem;
-  font-size: 1.05rem;
-  font-weight: 600;
-  line-height: 1.45;
-  color: var(--navy-soft);
+.card {
+  min-height: 13.75rem;
+  padding: 1.5rem 1.35rem;
+  border-radius: var(--radius-md);
+  background: var(--about-card);
+  color: var(--about-card-text);
+  border: 1px solid color-mix(in srgb, var(--about-card-text) 10%, transparent);
+  transition:
+    background-color 0.25s var(--ease-out),
+    transform 0.25s var(--ease-out),
+    box-shadow 0.25s var(--ease-out);
 }
 
-.highlights li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.55em;
-  width: 0.55rem;
-  height: 0.55rem;
-  border-radius: 50%;
-  background: var(--teal);
+.card:hover {
+  background: var(--about-card-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-soft);
+}
+
+.card p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.cardLabel {
+  margin-bottom: 0.65rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--about-text);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.toggle:hover,
+.toggle:focus-visible {
+  outline: none;
+}
+
+.toggle:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.arrow {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-0.15rem) rotate(45deg);
+  transition: transform 0.2s var(--ease-out);
+}
+
+.toggle[aria-expanded='true'] .arrow {
+  transform: translateY(0.15rem) rotate(225deg);
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.story[hidden] {
+  display: none;
+}
+
+.story p {
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--about-text);
 }
 
 @media screen and (max-width: 767px) {
-  .grid {
+  .cards {
     grid-template-columns: 1fr;
-    gap: 1rem;
+  }
+
+  .card {
+    min-height: 0;
   }
 }

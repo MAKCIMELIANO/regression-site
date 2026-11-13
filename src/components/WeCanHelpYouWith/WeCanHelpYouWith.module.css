@@ -1,7 +1,7 @@
 .section {
   padding: clamp(4rem, 8vw, 6.5rem) 0;
   background:
-    radial-gradient(700px 320px at 0% 0%, rgba(61, 184, 197, 0.12), transparent),
+    radial-gradient(700px 320px at 0% 0%, var(--spot-soft), transparent),
     var(--page);
 }
 
@@ -55,7 +55,7 @@
 .item:hover,
 .item:focus-visible {
   transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 22px 40px rgba(30, 58, 95, 0.22);
+  box-shadow: 0 22px 40px var(--shadow-lift);
   outline: none;
 }
 
@@ -71,7 +71,6 @@
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  opacity: 0.8;
 }
 
 .modal {
@@ -82,7 +81,7 @@
   inset: 0;
   z-index: 100;
   padding: 1rem;
-  background-color: rgba(16, 32, 54, 0.55);
+  background-color: var(--overlay);
   backdrop-filter: blur(4px);
   animation: fadeIn 0.2s ease both;
 }
@@ -108,22 +107,22 @@
 .modalContent p {
   font-size: 1.05rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.94);
+  color: inherit;
+  white-space: pre-line;
 }
 
 .close {
   position: absolute;
   top: 0.65rem;
   right: 0.85rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: inherit;
   font-size: 1.75rem;
   line-height: 1;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .close:hover,
 .close:focus-visible {
-  color: var(--white);
   transform: scale(1.08);
   outline: none;
 }

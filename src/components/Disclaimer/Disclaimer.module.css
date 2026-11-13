@@ -1,6 +1,6 @@
 .banner {
-  background: rgba(30, 58, 95, 0.06);
-  border-block: 1px solid rgba(30, 58, 95, 0.08);
+  background: color-mix(in srgb, var(--navy) 6%, transparent);
+  border-block: 1px solid color-mix(in srgb, var(--navy) 8%, transparent);
 }
 
 .inner {
@@ -14,4 +14,10 @@
   font-size: 0.9rem;
   line-height: 1.5;
   color: var(--text-muted);
+}
+
+.inner a {
+  color: var(--teal-deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }

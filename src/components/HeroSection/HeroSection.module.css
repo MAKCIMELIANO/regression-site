@@ -6,9 +6,9 @@
   padding: 1.75rem 0 3rem;
   overflow: hidden;
   background:
-    radial-gradient(900px 480px at 50% 110%, rgba(61, 184, 197, 0.22), transparent 60%),
-    radial-gradient(700px 360px at 15% 0%, rgba(216, 237, 208, 0.9), transparent 55%),
-    linear-gradient(165deg, #eef6e4 0%, #e4f2ea 45%, #d9eef1 100%);
+    radial-gradient(900px 480px at 50% 110%, var(--spot-hero), transparent 60%),
+    radial-gradient(700px 360px at 15% 0%, var(--hero-mint), transparent 55%),
+    linear-gradient(165deg, var(--hero-a) 0%, var(--hero-b) 45%, var(--hero-c) 100%);
 }
 
 .hero::before {
@@ -16,7 +16,7 @@
   position: absolute;
   inset: 20% -20% auto 40%;
   height: 55%;
-  background: radial-gradient(circle, rgba(232, 168, 56, 0.12), transparent 65%);
+  background: radial-gradient(circle, var(--amber-spot), transparent 65%);
   pointer-events: none;
   animation: fadeIn 1.2s var(--ease-out) both;
 }
@@ -24,6 +24,17 @@
 .headerWrap {
   position: relative;
   z-index: 2;
+}
+
+.hero :global(.btnPrimary) {
+  background: var(--hero-btn);
+  color: var(--hero-btn-text);
+  box-shadow: 0 10px 24px var(--hero-btn-glow);
+}
+
+.hero :global(.btnPrimary):hover,
+.hero :global(.btnPrimary):focus-visible {
+  background: var(--hero-btn-hover);
 }
 
 .header {

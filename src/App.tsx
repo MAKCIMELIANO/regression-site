@@ -9,7 +9,7 @@ import HeroSection from './components/HeroSection/HeroSection';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import SessionDetails from './components/SessionDetails/SessionDetails';
 import ShouldAlsoKnow from './components/ShouldAlsoKnow/ShouldAlsoKnow';
-import Testimonials from './components/Testimonials/Testimonials';
+import PalettePreview from './components/PalettePreview/PalettePreview';
 import WeCanHelpYouWith from './components/WeCanHelpYouWith/WeCanHelpYouWith';
 
 function getPageFromHash() {
@@ -58,6 +58,7 @@ function App() {
       <div className="app">
         <PrivacyPolicy />
         <Footer />
+        <PalettePreview />
       </div>
     );
   }
@@ -69,11 +70,11 @@ function App() {
       <AboutUs />
       <SessionDetails />
       <WeCanHelpYouWith />
-      <Testimonials />
       <ShouldAlsoKnow />
       <Disclaimer />
       <ContactUs />
       <Footer />
+      <PalettePreview />
     </div>
   );
 }

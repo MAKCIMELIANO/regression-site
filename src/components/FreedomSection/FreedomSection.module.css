@@ -1,6 +1,6 @@
 .section {
-  background: linear-gradient(160deg, var(--teal) 0%, var(--teal-deep) 100%);
-  color: var(--white);
+  background: linear-gradient(160deg, var(--approach-from) 0%, var(--approach-to) 100%);
+  color: var(--approach-text);
   overflow: hidden;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .textContent :global(.sectionLabel) {
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--approach-label);
 }
 
 .textContent h2 {
@@ -46,18 +46,19 @@
   font-size: 1.05rem;
   font-weight: 500;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--approach-muted);
 }
 
 .textContent :global(.btnSecondary) {
-  border-color: var(--white);
-  color: var(--white);
+  border-color: var(--approach-btn);
+  color: var(--approach-btn);
 }
 
 .textContent :global(.btnSecondary):hover,
 .textContent :global(.btnSecondary):focus-visible {
-  background: var(--white);
-  color: var(--teal-deep);
+  background: var(--approach-btn-hover);
+  border-color: var(--approach-btn-hover);
+  color: var(--approach-btn-hover-text);
 }
 
 .imageContent {

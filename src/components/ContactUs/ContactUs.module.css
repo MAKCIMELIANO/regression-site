@@ -1,6 +1,6 @@
 .section {
-  background: linear-gradient(155deg, var(--navy) 0%, #162a46 100%);
-  color: var(--white);
+  background: linear-gradient(155deg, var(--contact-from) 0%, var(--contact-to) 100%);
+  color: var(--contact-text);
   overflow: hidden;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .textContent :global(.sectionLabel) {
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--contact-label);
 }
 
 .textContent h2 {
@@ -34,7 +34,7 @@
 .lead {
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   font-weight: 700;
-  color: var(--teal);
+  color: var(--accent-on-dark);
 }
 
 .body {
@@ -42,7 +42,7 @@
   margin-bottom: 0.5rem;
   font-size: 1.05rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.86);
+  color: var(--contact-muted);
 }
 
 .actions {
@@ -53,33 +53,38 @@
 }
 
 .textContent :global(.btnSecondary) {
-  border-color: rgba(255, 255, 255, 0.55);
-  color: var(--white);
+  border-color: var(--contact-btn-border);
+  color: var(--contact-btn);
 }
 
 .textContent :global(.btnSecondary):hover,
 .textContent :global(.btnSecondary):focus-visible {
-  background: var(--white);
-  color: var(--navy);
-  border-color: var(--white);
+  background: var(--contact-btn-hover);
+  color: var(--contact-btn-hover-text);
+  border-color: var(--contact-btn-hover);
 }
 
 .phone {
   font-size: 1.05rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--contact-line);
   transition: color 0.2s ease;
 }
 
 .phone:hover,
 .phone:focus-visible {
-  color: var(--teal);
+  color: var(--accent-on-dark);
   outline: none;
 }
 
 .socials {
   margin-top: 0.75rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--contact-line);
+}
+
+.socials a:hover,
+.socials a:focus-visible {
+  color: var(--accent-on-dark);
 }
 
 .imageContent {

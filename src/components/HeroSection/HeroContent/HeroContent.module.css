@@ -7,11 +7,12 @@
 }
 
 .brandSignal {
-  margin-bottom: 1.1rem;
+  max-width: 14ch;
+  margin: 0 auto 1.1rem;
   font-family: var(--font-display);
-  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-size: clamp(2.1rem, 5vw, 3.35rem);
   font-weight: 700;
-  line-height: 0.95;
+  line-height: 1.05;
   letter-spacing: -0.03em;
   color: var(--teal-deep);
 }

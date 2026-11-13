@@ -1,19 +1,78 @@
 :root {
-  --navy: #1e3a5f;
-  --navy-soft: rgba(30, 58, 95, 0.62);
-  --teal: #3db8c5;
-  --teal-deep: #2a9aa6;
-  --mint-wash: #eef6e4;
-  --mint-glow: #d8edd0;
-  --amber: #e8a838;
-  --amber-hover: #d4942a;
-  --coral: #c45c5c;
-  --page: #f7faf5;
-  --surface: #ffffff;
-  --text: #1e3a5f;
-  --text-muted: rgba(30, 58, 95, 0.62);
+  --navy: #322016;
+  --navy-soft: #322016;
+  --navy-deep: #24160e;
+  --teal: #5a3c28;
+  --teal-deep: #322016;
+  --accent-on-dark: #322016;
+  --approach-from: #ecebe0;
+  --approach-to: #c19570;
+  --approach-text: #322016;
+  --approach-muted: #322016;
+  --approach-label: #322016;
+  --approach-btn: #322016;
+  --approach-btn-hover: #322016;
+  --approach-btn-hover-text: #ecebe0;
+  --contact-from: #abc5e8;
+  --contact-to: #abc5e8;
+  --contact-text: #322016;
+  --contact-muted: #322016;
+  --contact-label: #322016;
+  --contact-line: #322016;
+  --contact-btn: #322016;
+  --contact-btn-border: #322016;
+  --contact-btn-hover: #322016;
+  --contact-btn-hover-text: #ecebe0;
+  --about-bg: #5a3c28;
+  --about-text: #ecebe0;
+  --about-muted: #ecebe0;
+  --about-label: #ecebe0;
+  --about-mark: #e9631a;
+  --about-card: #ecebe0;
+  --about-card-text: #322016;
+  --about-card-label: #322016;
+  --about-card-hover: #cedae4;
+  --hero-btn: #ecebe0;
+  --hero-btn-hover: #f7f6f1;
+  --hero-btn-text: #322016;
+  --hero-btn-glow: rgba(36, 22, 14, 0.22);
+  --help-bg-0: #c19570;
+  --help-fg-0: #322016;
+  --help-bg-1: #e9631a;
+  --help-fg-1: #322016;
+  --help-bg-2: #abc5e8;
+  --help-fg-2: #322016;
+  --help-bg-3: #5a3c28;
+  --help-fg-3: #ecebe0;
+  --help-bg-4: #322016;
+  --help-fg-4: #ecebe0;
+  --help-bg-5: #e9631a;
+  --help-fg-5: #322016;
+  --help-bg-6: #24160e;
+  --help-fg-6: #ecebe0;
+  --mint-wash: #e4e8f2;
+  --mint-glow: #c19570;
+  --hero-mint: rgba(233, 99, 26, 0);
+  --hero-a: #e9631a;
+  --hero-b: #e9631a;
+  --hero-c: #e9631a;
+  --amber: #e9631a;
+  --amber-hover: #ee6a22;
+  --on-cta: #322016;
+  --coral: #e9631a;
+  --page: #ecebe0;
+  --surface: #f7f6f1;
+  --text: #322016;
+  --text-muted: #322016;
   --white: #ffffff;
-  --shadow-soft: 0 18px 50px rgba(30, 58, 95, 0.12);
+  --shadow-soft: 0 18px 50px rgba(50, 32, 22, 0.12);
+  --shadow-lift: rgba(50, 32, 22, 0.22);
+  --spot: rgba(171, 197, 232, 0.55);
+  --spot-soft: rgba(171, 197, 232, 0.35);
+  --spot-hero: rgba(233, 99, 26, 0);
+  --amber-spot: rgba(233, 99, 26, 0);
+  --cta-glow: rgba(233, 99, 26, 0.32);
+  --overlay: rgba(36, 22, 14, 0.55);
   --radius-sm: 10px;
   --radius-md: 18px;
   --inner-max: 1120px;
@@ -43,7 +102,7 @@ body {
   font-family: var(--font-body);
   background:
     radial-gradient(1200px 600px at 10% -10%, var(--mint-glow), transparent 55%),
-    radial-gradient(900px 500px at 100% 0%, rgba(61, 184, 197, 0.18), transparent 50%),
+    radial-gradient(900px 500px at 100% 0%, var(--spot), transparent 50%),
     var(--page);
   -webkit-font-smoothing: antialiased;
 }
@@ -130,8 +189,8 @@ button {
 
 .btnPrimary {
   background: var(--amber);
-  color: var(--navy);
-  box-shadow: 0 10px 24px rgba(232, 168, 56, 0.28);
+  color: var(--on-cta);
+  box-shadow: 0 10px 24px var(--cta-glow);
 }
 
 .btnPrimary:hover,

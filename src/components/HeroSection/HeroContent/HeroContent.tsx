@@ -4,23 +4,26 @@ import s from './HeroContent.module.css';
 function HeroContent() {
   return (
     <div className={s.heroContent}>
-      <p className={s.brandSignal}>{site.brand}</p>
+      <p className={s.brandSignal}>{site.heroKicker}</p>
       <h1 className={s.heroTitle}>
-        Регресійний гіпноз для внутрішньої гармонії
+        Регресійна терапія для внутрішньої гармонії
       </h1>
       <p className={s.heroText}>
-        Допомагаю м’яко дійти до коренів станів, які заважають жити спокійно,
-        і знайти опору в собі. Сеанси проводжу онлайн, у Telegram.
+        Часом здається, що все під контролем, але зсередини випалює тривога,
+        старі сценарії повторюються знову і знову, а на звичні кроки просто не
+        вистачає сил. Я допомагаю розібратися з тим, що ховається за цим
+        напруженням — спокійно, без пафосу, без складних термінів і нав’язаних
+        діагнозів. Сеанси проводжу онлайн у Telegram.
       </p>
       <p className={s.meta}>
-        Онлайн · {site.session.duration} · {site.session.priceFrom}
+        Онлайн у Telegram · {site.session.duration} · {site.session.priceFrom}
       </p>
       <div className={s.heroButtons}>
         <a className="btnPrimary" href="#contact">
           Записатися на сеанс
         </a>
         <a className="btnSecondary" href="#help">
-          З чим я працюю
+          Можливі запити
         </a>
       </div>
     </div>

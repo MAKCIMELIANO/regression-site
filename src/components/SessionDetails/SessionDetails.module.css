@@ -1,7 +1,7 @@
 .section {
   padding: clamp(4rem, 8vw, 6rem) 0;
   background:
-    radial-gradient(600px 280px at 100% 0%, rgba(232, 168, 56, 0.12), transparent),
+    radial-gradient(600px 280px at 100% 0%, var(--amber-spot), transparent),
     var(--surface);
 }
 
@@ -38,7 +38,7 @@
   padding: 1.5rem 1.35rem;
   border-radius: var(--radius-md);
   background: var(--page);
-  border: 1px solid rgba(30, 58, 95, 0.08);
+  border: 1px solid color-mix(in srgb, var(--navy) 8%, transparent);
   transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out);
 }
 

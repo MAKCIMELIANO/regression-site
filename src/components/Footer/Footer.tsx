@@ -12,8 +12,9 @@ function Footer() {
         <div className={s.footerSection}>
           <h3 className={s.footerTitle}>Про мене</h3>
           <p className={s.footerText}>
-            Я, {site.fullName}, {site.role}. Допомагаю знайти внутрішню опору
-            через регресійний гіпноз — онлайн, у вашому темпі.
+            Я, {site.fullName}, ваш {site.role}. Допоможу знайти причину і
+            відновити внутрішню опору за допомогою регресивного гіпнозу.
+            Онлайн, комфортно, у вашому темпі.
           </p>
           <p className={s.footerText}>
             <a href="#privacy">Політика конфіденційності</a>
@@ -44,7 +45,7 @@ function Footer() {
       <div className={s.copyrightContainer}>
         <div className={`inner ${s.copyrightInner}`}>
           <p className={s.copyright}>
-            © {year} {site.brand}. Розробив{' '}
+            © {year} {site.fullName}. Розробив{' '}
             <a href={`mailto:${site.developerEmail}`}>
               {site.developerEmail}
             </a>
