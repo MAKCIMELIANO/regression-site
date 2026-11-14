@@ -425,7 +425,7 @@ export const PALETTES: Palette[] = [
   {
     id: 'apricot',
     name: 'Абрикос',
-    note: 'Зараз на сайті. Герой — апельсин, Підхід — папір і засмага, Про мене — темна засмага.',
+    note: 'Зараз на сайті. Герой і контакти — блакитний, Підхід — папір і засмага, Про мене — темна засмага.',
     swatch: ['#ECEBE0', '#ABC5E8', '#E9631A'],
     vars: {
       '--navy': '#322016',
@@ -482,9 +482,9 @@ export const PALETTES: Palette[] = [
       '--mint-wash': '#E4E8F2',
       '--mint-glow': '#C19570',
       '--hero-mint': 'rgba(233, 99, 26, 0)',
-      '--hero-a': '#E9631A',
-      '--hero-b': '#E9631A',
-      '--hero-c': '#E9631A',
+      '--hero-a': '#ABC5E8',
+      '--hero-b': '#ABC5E8',
+      '--hero-c': '#ABC5E8',
       '--amber': '#E9631A',
       '--amber-hover': '#EE6A22',
       '--on-cta': '#322016',

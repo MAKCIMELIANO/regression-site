@@ -7,14 +7,22 @@
 }
 
 .brandSignal {
-  max-width: 14ch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.06em;
   margin: 0 auto 1.1rem;
-  font-family: var(--font-display);
+  font-family: var(--brand-font, 'Literata', Georgia, serif);
   font-size: clamp(2.1rem, 5vw, 3.35rem);
-  font-weight: 700;
+  font-weight: var(--brand-weight, 600);
   line-height: 1.05;
   letter-spacing: -0.03em;
   color: var(--teal-deep);
+}
+
+.brandLine {
+  display: block;
+  white-space: nowrap;
 }
 
 .heroTitle {

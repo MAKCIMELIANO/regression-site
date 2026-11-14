@@ -16,7 +16,7 @@ export const site = {
   developerEmail: 'makcimeliano@gmail.com',
   /** Вставте ID з Meta Events Manager — поки порожньо, піксель не завантажується */
   metaPixelId: '',
-  heroKicker: 'Регресолог Юля Кирилюк',
+  heroKicker: ['Регресолог', 'Юля Кирилюк'],
   session: {
     format: 'Онлайн',
     platforms: 'Telegram',

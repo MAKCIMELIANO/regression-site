@@ -4,7 +4,13 @@ import s from './HeroContent.module.css';
 function HeroContent() {
   return (
     <div className={s.heroContent}>
-      <p className={s.brandSignal}>{site.heroKicker}</p>
+      <p className={s.brandSignal}>
+        {site.heroKicker.map((line) => (
+          <span key={line} className={s.brandLine}>
+            {line}
+          </span>
+        ))}
+      </p>
       <h1 className={s.heroTitle}>
         Регресійна терапія для внутрішньої гармонії
       </h1>
